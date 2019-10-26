@@ -22,3 +22,16 @@ export const outerTableStyle = {
     ...tableStyle,
     backgroundColor: "#f6f6f6"
 }
+
+export const h1Style = {
+    position: "absolute",
+    width: "162px",
+    height: "44px",
+    left: "106px",
+    top: "89px",
+    fontFamily: "Open Sans",
+    fontStyle: "normal",
+    fontWeight: "bold",
+    fontSize: "32px",
+    lineHeight: "44px",
+}
