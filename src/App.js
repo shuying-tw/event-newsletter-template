@@ -14,7 +14,7 @@ const App = (props) => {
     <body className="App">
       <div className="container">
         <div className="col-markdown">
-          <textarea className="markdown-textarea" type="text" name="input" value={markdown} onChange={handleChange}></textarea>
+          <textarea className="markdown-textarea" data-testid="textarea" type="text" name="input" value={markdown} onChange={handleChange}></textarea>
         </div>
         <div className="col-preview">
           <Table style={style.outerTableStyle}>
@@ -24,7 +24,9 @@ const App = (props) => {
             </tr>
           </tbody>
           </Table>
-          <ReactMarkdown source={markdown} />
+          <div data-testid="preview">
+            <ReactMarkdown source={markdown} />
+          </div>
         </div>
       </div>
     </body>

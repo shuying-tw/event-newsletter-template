@@ -1,5 +1,5 @@
 import React from 'react'
-import { Table } from './table';
+import { Table } from '../components/table';
 import { render } from '@testing-library/react'
 
 describe('table', () => {
